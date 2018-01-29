@@ -1,0 +1,85 @@
+
+?????????????????????????????????????????????????????????????????????????
+?                                                                       ?
+?                                                                       ?
+?            PortPlan - Programa para Analise de Porticos               ?
+?                                 Planos                                ?
+?                                                                       ?
+?                                                                       ?
+?           Metodo Numerico - Analise Matricial de Estruturas           ?
+?                                                                       ?
+?                                                                       ?
+?????????????????????????????????????????????????????????????????????????
+
+
+ Problema analisado => F:\Exemplo6.txt
+
+ Dados dos Nos 
+
+ Numero de nos da estrutura: 3
+
+ Coordenadas Nodais 
+
+ No  Coordenada X  Coordenada Y 
+   1      0.0000    0.0000
+   2      0.0000    1.0000
+   3      1.0000    1.0000
+
+ Nos com vinculaoes fixas 
+
+ No   Desloc. X    Desloc Y   Desloc Z 
+  1    Impedido    Impedido    Impedido
+  3    Impedido    Impedido      Livre
+
+
+ Dados dos Elementos 
+
+ Numero de elementos da estrutura: 2
+
+ Caracteristicas dos Elementos 
+
+ Elem.  No i  No f   Mod. Elas.   Inercia     Area     Comprimento 
+   1     1      2     1.0000      1.0000      1.0000     1.0000
+   2     2      3     1.0000      1.0000      1.0000     1.0000
+
+ Dados dos Carregamentos 
+
+ Nos com carga concentrada 
+
+ No     Fx         Fy        M 
+ 2    1.0000   -1.0000   -1.0000
+
+ Elementos com carga uniformemente distribuidas 
+
+ Elem.      q 
+   2   -1.0000
+
+
+ Impressao dos Resultados da Analise Estatica 
+
+ Deslocamentos Nodais (Sistema Global) 
+ No  Desloc. X  Desloc Y  Giro Z 
+ 1  0.00E+000  0.00E+000  0.00E+000
+ 2  1.63E-001 -2.67E-001 -1.86E-001
+ 3  0.00E+000  0.00E+000  5.14E-001
+
+ Forcas Nodais no Elemento 
+ Elem.  No i.    Fx        Fy      M 
+        No f.    Fx        Fy      M 
+    1    1    0.2670    0.8374    0.6044
+         2   -0.2670   -0.8374    0.2330
+    2    2    0.1626   -1.2330   -1.3163
+         3   -0.1626    1.2330    0.0833
+
+ Esforcos Nodais no Elemento 
+ Elem.  No i.    Fx        Fy      M 
+        No f.    Fx        Fy      M 
+    1    1    0.2670    0.8374    0.6044
+         2   -0.2670   -0.8374    0.2330
+    2    2    0.1626   -0.7330   -1.2330
+         3   -0.1626    1.7330    0.0000
+
+ Reacoes de Apoio 
+ No     Rx        Ry        Rz 
+ 1   -0.8374    0.2670    0.6044
+ 3   -0.1626    1.7330    0.0000

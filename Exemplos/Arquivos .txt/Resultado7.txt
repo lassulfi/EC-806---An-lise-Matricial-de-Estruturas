@@ -1,0 +1,70 @@
+
+?????????????????????????????????????????????????????????????????????????
+?                                                                       ?
+?                                                                       ?
+?            PortPlan - Programa para Analise de Porticos               ?
+?                                 Planos                                ?
+?                                                                       ?
+?                                                                       ?
+?           Metodo Numerico - Analise Matricial de Estruturas           ?
+?                                                                       ?
+?                                                                       ?
+?????????????????????????????????????????????????????????????????????????
+
+
+ Problema analisado => F:\Exemplo7.txt
+
+ Dados dos Nos 
+
+ Numero de nos da estrutura: 2
+
+ Coordenadas Nodais 
+
+ No  Coordenada X  Coordenada Y 
+   1      0.0000    0.0000
+   2      1.0000    0.0000
+
+ Nos com vinculaoes fixas 
+
+ No   Desloc. X    Desloc Y   Desloc Z 
+  1    Impedido    Impedido    Impedido
+  2      Livre       Livre       Livre
+
+ Nos com recalque de apoio 
+
+ No  Recalque X  Recalque Y  Recalque Z 
+  1    0.0000       0.0000       0.0000
+  2    1.0000       -1.0000       0.0000
+
+ Dados dos Elementos 
+
+ Numero de elementos da estrutura: 1
+
+ Caracteristicas dos Elementos 
+
+ Elem.  No i  No f   Mod. Elas.   Inercia     Area     Comprimento 
+   1     1      2     1.0000      1.0000      1.0000     1.0000
+
+ Impressao dos Resultados da Analise Estatica 
+
+ Deslocamentos Nodais (Sistema Global) 
+ No  Desloc. X  Desloc Y  Giro Z 
+ 1  0.00E+000  0.00E+000  0.00E+000
+ 2  1.00E+000 -1.00E+000 -1.50E+000
+
+ Forcas Nodais no Elemento 
+ Elem.  No i.    Fx        Fy      M 
+        No f.    Fx        Fy      M 
+    1    1   -1.0000    3.0000    3.0000
+         2    1.0000   -3.0000    0.0000
+
+ Esforcos Nodais no Elemento 
+ Elem.  No i.    Fx        Fy      M 
+        No f.    Fx        Fy      M 
+    1    1   -1.0000    3.0000    3.0000
+         2    1.0000   -3.0000    0.0000
+
+ Reacoes de Apoio 
+ No     Rx        Ry        Rz 
+ 1    1.0000   -3.0000    3.0000
+ 2    1.0000   -3.0000    0.0000

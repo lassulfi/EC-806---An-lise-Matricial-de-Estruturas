@@ -1,0 +1,91 @@
+
+?????????????????????????????????????????????????????????????????????????
+?                                                                       ?
+?                                                                       ?
+?            PortPlan - Programa para Analise de Porticos               ?
+?                                 Planos                                ?
+?                                                                       ?
+?                                                                       ?
+?           Metodo Numerico - Analise Matricial de Estruturas           ?
+?                                                                       ?
+?                                                                       ?
+?????????????????????????????????????????????????????????????????????????
+
+
+ Problema analisado => D:\port1.txt
+
+ Dados dos Nos 
+
+
+ Coordenadas Nodais 
+
+ No  Coordenada X  Coordenada Y 
+   1      0.0000    0.0000
+   2      0.7071    0.7071
+   3      2.1213    2.1213
+   4      5.0000    2.1213
+
+ Nos com vinculaoes fixas 
+
+ No   Desloc. X    Desloc Y   Desloc Z 
+  1    Impedido    Impedido    Impedido
+  4    Impedido    Impedido      Livre
+
+ Nos com recalque de apoio 
+
+ No  Recalque X  Recalque Y  Recalque Z 
+  1    0.0000       0.0000       0.0000
+  4    0.0000       0.0000       0.0000
+
+ Dados dos Elementos 
+
+
+ Caracteristicas dos Elementos 
+
+ Elem.  No i  No f   Mod. Elas.   Inercia     Area     Comprimento 
+   1     1      2     1.0000      1.0000      1.0000     1.0000
+   2     2      3     1.0000      1.0000      1.0000     2.0000
+   3     3      4     1.0000      1.0000      1.0000     2.8787
+
+ Dados dos Carregamentos 
+
+ Nos com carga concentrada 
+
+ No     Fx         Fy        M 
+ 3    1.0000   -1.0000    0.0000
+
+
+
+ Impressao dos Resultados da Analise Estatica 
+
+ Deslocamentos Nodais (Sistema Global) 
+ No  Desloc. X  Desloc Y  Giro Z 
+ 1  0.00E+000  0.00E+000  0.00E+000
+ 2  3.04E-001 -4.40E-001 -9.19E-001
+ 3  1.46E+000 -1.87E+000 -3.75E-001
+ 4  0.00E+000  0.00E+000  1.16E+000
+
+ Forcas Nodais no Elemento 
+ Elem.  No i.    1        2      3 
+        No f.    4        5      6 
+    1    1    0.0961    0.7942    1.3164
+         2   -0.0961   -0.7942   -0.5222
+    2    2    0.0961    0.7942    0.5222
+         3   -0.0961   -0.7942    1.0663
+    3    3    0.5063   -0.3704   -1.0663
+         4   -0.5063    0.3704   -0.0000
+
+ Esforcos Nodais no Elemento 
+ Elem.  No i.    N        V      M 
+        No f. 
+    1    1    0.0961    0.7942    1.3164
+         2   -0.0961   -0.7942   -0.5222
+    2    2    0.0961    0.7942    0.5222
+         3   -0.0961   -0.7942    1.0663
+    3    3    0.5063   -0.3704   -1.0663
+         4   -0.5063    0.3704   -0.0000
+
+ Reacoes de Apoio 
+ No     Rx        Ry        Rz 
+ 1   -0.4937    0.6296    1.3164
+ 4   -0.5063    0.3704    0.0000
